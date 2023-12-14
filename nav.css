@@ -1,0 +1,86 @@
+header {
+	position: fixed;
+	z-index: 1;
+	width: 100vw;
+	height: 80px;
+	color: rgb(18, 18, 18);
+	background-color: white;
+	font-family: "Pretendard-SemiBold";
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.cafe-logo-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+	height: 80px;
+}
+.cafe-logo-box__image {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+.cafe-logo-box__text {
+	width: 120px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 20px;
+}
+.cafe-info-box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+	font-size: 0.98vw;
+}
+.cafe-info-box__button {
+	padding: 5px 8px;
+}
+.cafe-info-box__button:hover {
+	cursor: pointer;
+	color: rgb(169, 180, 244);
+}
+.cafe-action-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+.cafe-action-box__button--language {
+	padding: 5px 15px;
+	border: none;
+	border-radius: 15px;
+	border: 1px solid rgb(18, 18, 18);
+	background-color: transparent;
+	color: rgb(18, 18, 18);
+}
+.cafe-action-box__button--bar{
+    display: none;
+    border: none;
+    background-color: transparent;
+	color: rgb(18, 18, 18);
+    font-size: 25px;
+}
+.cafe-action-box__button--language:hover, .cafe-action-box__button--bar:hover {
+	cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .cafe-info-box{
+        display: none;
+    }
+    .cafe-action-box__button--language{
+        display: none;
+    }
+    .cafe-action-box__button--bar{
+        display: block;
+    }
+}
+
